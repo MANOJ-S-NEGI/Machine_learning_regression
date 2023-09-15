@@ -61,17 +61,61 @@ the graph will be like:
 θ<sub>0</sub> and θ<sub>1</sub>  that minimize this cost function. This is typically done using optimization techniques like gradient descent.
 
 4. In practical terms, the cost function measures how well the model's predictions (h<sub>0</sub>(x<sub>i</sub>)) align with the actual target values (y<sub>i</sub>). 
- - It quantifies the discrepancy between predicted and actual values, with larger discrepancies resulting in higher cost values.
+   - It quantifies the discrepancy between predicted and actual values, with larger discrepancies resulting in higher cost values.
 
 5. The process of training the model involves adjusting the parameters (θ<sub>0</sub> and θ<sub>1</sub>) iteratively to minimize this cost function. 
- - When the cost function reaches a minimum, the model provides the best fit to the data.
+   - When the cost function reaches a minimum, the model provides the best fit to the data.
 
-|Mean_Square_Error|
-|:-:|
-|<h4>MSE = <sup>n</sup>∑<sub>i=1</sub> (Y - &#374;)<sup>2</sup> / (number of datapoint)</h4>|
+|<h3>Cost_Function</h3>||
+|:-:|:-:|
+|Mean_Square_Error|<h4>MSE = <sup>n</sup>∑<sub>i=1</sub> (Y<sub>i</sub> - &#374;<sub>i</sub>)<sup>2</sup> / n </h4>|
+|Mean_Absolute_Error|<h4>MAE = <sup>n</sup>∑<sub>i=1</sub> IY<sub>i</sub> - &#374;<sub>i</sub>I / n</h4>|
+|Root_Mean_Squared_Error|<h4>RMSE = √(MAE)</h4>|
+where, n = (number of datapoints)
+
+<br>
+<br>
+
+#### 1. MSE [Mean_Square_Error]
+
+**Advantages**
+
+1. MSE equation is differentiable:
+  - Because the MSE is a quadratic function (ax<sup>2</sup>+by+c) of the differences between actual and predicted values, it is differentiable.
+  - This means that its derivative can be computed with respect to the parameters (e.g., the model's weights or coefficients).
+  - This property enables the use of gradient-based optimization methods to find the set of parameters that minimize the MSE, leading to an accurate model.
+
+2. MSE always has a Global minima:
+   - This is because the MSE is a continuous and convex function with respect to the model parameters.
+
+![local minima](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/025ce040-bb53-4ca2-8395-ba805420585a)
+
+---
+
+Example:
+
+since, h<sub>0</sub>(x<sub>i</sub>) = θ<sub>0</sub> + θ<sub>1</sub>x  (if intercept is 0)
+
+then, h<sub>0</sub>(x<sub>i</sub>) =  θ<sub>1</sub>x
+
+if θ<sub>1</sub> = 0.5 and x = [1,2,3]
 
 
+|x|h<sub>0</sub>(x<sub>i</sub>) = θ<sub>1</sub>x||
+|:-|:-|:-|
+|For x<sub>1</sub> =1:| 0.5 * 1| = 0.5|
+|For x<sub>2</sub> = 2:|0.5 * 2| = 1.0|
+|For x<sub>3</sub> = 3:|0.5 * 3| = 1.5|
 
 
+![example theta](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/28035a49-2680-4602-aa85-4b7c7b37c941)
+
+ j(θ<sub>1</sub>) = ((0.3-1)<sup>2</sup> + (1-2)<sup>2</sup>  + (1.5-3)<sup>2</sup> /3)
+
+  j(θ<sub>1</sub>) = (0.49+1+2.25)/3
+
+ j(θ<sub>1</sub>) ≈1.25
+
+---
 
 
