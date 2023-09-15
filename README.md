@@ -109,25 +109,56 @@ why local minima is a disadvantage while global minima not?
 
 
 #### 2. MAE [Mean_Absolute_Error]
-**Advantages:**
-  - Robust to Outliers
-  - Always in the same unit(+ve)
-
-**Disadvantages:**
-  - Convergence usually takes more time (more computational time to reach minima)
-
+|Advantages:| Disadvantages|
+|:-|:-|
+| Robust to Outliers|Convergence usually takes more time (more computational time to reach minima)|
+|Always in the same unit(+ve)|May Mask the Scale of Errors: If there are a few very large errors in the dataset, the average might not accurately represent the typical error. In such cases, a metric that penalizes larger errors more (like MSE) might provide a better assessment.|
 
 
 #### 3. RMSE [Root_Mean_Squared_Error]
-**Advantages:**
-  - Always measure same unit as response variable
-
-**Disadvantages:**
-  - sensitive to outliers
+|Advantages:| Disadvantages|
+|:-|:-|
+|- Interpretability: RMSE is in the same unit as the dependent variable, which makes it easy to interpret. For example, if you're predicting house prices in dollars, the RMSE will also be in dollars |- sensitive to outliers|
+|Smoothness of Optimization Landscape: It is a smooth function that is differentiable almost everywhere, which makes it well-suited for mathematical optimization procedures.|Non-Negative Values Only: RMSE doesn't work well if your data can have negative values, as it squares the errors.|
 
 
 ---
 
+## Performance metric for LinerRegression:
+|<h3>Performance_matric</h3>|
+|:-:|
+|R<sup>2</sup>|
+|Adjusted R<sup>2</sup>|
+
+
+1. **R<sup>2</sup>:**  is calculated as the ratio of the explained variance to the total variance. It is often computed as 
+```
+ R^2 = 1-(Sum of Squared Errors (SSE)/Total Sum of Squares (SST))
+
+​where
+   SSE is the sum of the squared differences between the actual and predicted values,
+   SST is the total sum of squared differences between the actual values and the mean of the dependent variable.
+```
+
+
+|**Interpretation of (R<sup>2</sup>)**|
+|:-|
+|An (R<sup>2</sup>) value ranges from 0 to 1,|
+|* 0 means that the model does not explain any of the variability in the target variable.|
+|* 1 means that the model perfectly predicts the target variable.|
+|* if  R<sup>2</sup> is negative than it is worst model
+
+
+2. **Adjusted (R<sup>2</sup>)**
+      - Adjusted R-squared addresses a limitation of regular R-squared. R-squared tends to increase as more predictors are added to the model, even if those predictors do not significantly improve the model's explanatory power. Adjusted R-squared penalizes excessive use of predictors that do not add value.
+
+
+The formula for adjusted R-squared is:
+4. 
+
+
+
+---
 
 Example:
 
