@@ -1,4 +1,4 @@
-    # Machine_learning_regression
+# Machine_learning_regression
 
 
 ---
@@ -131,7 +131,7 @@ why local minima is a disadvantage while global minima not?
 |Adjusted R<sup>2</sup>|
 
 
- ##1. **R<sup>2 [R_Square]</sup>:**
+ ## 1. **R<sup>2</sup> [R_Square]:**
    - is calculated as the ratio of the explained variance to the total variance. It is often computed as 
 ```
  R^2 = 1-(Sum of Squared Errors (SSE)/Total Sum of Squares (SST))
@@ -150,19 +150,17 @@ why local minima is a disadvantage while global minima not?
 |* if  R<sup>2</sup> is negative than it is worst model
 
 
-##2. **Adjusted (R<sup>2</sup>)**
-      - Adjusted R-squared addresses a limitation of regular R-squared. R-squared tends to increase as more predictors are added to the model, even if those predictors do not significantly improve the model's explanatory power. Adjusted R-squared penalizes excessive use of predictors that do not add value.
+## 2. **Adjusted (R<sup>2</sup>)**
+- Adjusted R-squared addresses a limitation of regular R-squared. R-squared tends to increase as more predictors are added to the model, even if those predictors do not significantly improve the model's explanatory power. Adjusted R-squared penalizes excessive use of predictors that do not add value.
+- The formula for adjusted R-squared is:  1 − ((1-R<sup>2</sup>)(n-1) /(n−p−1))
+    - where n is the number of observations and p is the number of predictors in the model.
 
-
-      - The formula for adjusted R-squared is:  1 − ((1-R<sup>2</sup>)(n-1) /(n−p−1))
-            - where n is the number of observations and p is the number of predictors in the model.
-
-      - Interpretation:
-            - R<sup>2</sup>ranges from −∞ to 1.
-            - A higher R<sup>2</sup> indicates a better fit.
-            - A negative R<sup>2</sup> implies that the model is worse than a model that simply predicts the mean of the dependent variable for all observations.
-            - Adjusted R-squared will be less than or equal to R-squared.
-            - If adding a new predictor improves the model, both R-squared and adjusted R-squared will increase. If the new predictor does not improve the model, R-squared may increase but adjusted R-squared will stay the same or decrease.
+- Interpretation:
+    - R<sup>2</sup>ranges from −∞ to 1.
+    - A higher R<sup>2</sup> indicates a better fit.
+    - A negative R<sup>2</sup> implies that the model is worse than a model that simply predicts the mean of the dependent variable for all observations.
+    - Adjusted R-squared will be less than or equal to R-squared.
+    - If adding a new predictor improves the model, both R-squared and adjusted R-squared will increase. If the new predictor does not improve the model, R-squared may increase but adjusted R-squared will stay the same or decrease.
 
 ​
  
