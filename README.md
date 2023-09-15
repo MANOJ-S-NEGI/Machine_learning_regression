@@ -87,10 +87,25 @@ where, n = (number of datapoints)
 
 2. MSE always has a Global minima:
    - This is because the MSE is a continuous and convex function with respect to the model parameters.
+   - global minimum is the lowest value of a function over its entire domain. It means that no other point in the function's domain has a lower value.
+
+     
+![global minima](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/f035d464-c3a1-4f5c-acf9-fff76fbc4ef0)
+global minima is a convex function
 
 ![local minima](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/025ce040-bb53-4ca2-8395-ba805420585a)
+local minima is a nonconvex function
+
+why local minima is a disadvantage while global minima not?
+ - As plotted above, there are two depths in the local minima plot, the one with extreme depth is the global minima and the smaller depth is the local minima as the slope
+   keep getting updated to reach the global minima (i.e. to reduce the error margin and increase the accuracy) meanwhile, some functions get stuck and
+   unable to get an update due to the negligible change in weights so unable to reach the global minima or we can say unable to reduce the error margin rate.
+
+- convex function does not have this problem
+   
 
 ---
+
 
 Example:
 
