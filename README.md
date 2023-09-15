@@ -1,4 +1,4 @@
-# Machine_learning_regression
+    # Machine_learning_regression
 
 
 ---
@@ -103,6 +103,28 @@ why local minima is a disadvantage while global minima not?
 
 - convex function does not have this problem
    
+**Disadvantages**
+  - MSE is not robust to outliers
+  - MSE function penalizes the error.
+
+
+#### 2. MAE [Mean_Absolute_Error]
+**Advantages:**
+  - Robust to Outliers
+  - Always in the same unit(+ve)
+
+**Disadvantages:**
+  - Convergence usually takes more time (more computational time to reach minima)
+
+
+
+#### 3. RMSE [Root_Mean_Squared_Error]
+**Advantages:**
+  - Always measure same unit as response variable
+
+**Disadvantages:**
+  - sensitive to outliers
+
 
 ---
 
