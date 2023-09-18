@@ -195,5 +195,42 @@ if θ<sub>1</sub> = 0.5 and x = [1,2,3]
  j(θ<sub>1</sub>) ≈1.25
 
 ---
+___
+___
+
+# Ridge regression
+It's a form of linear regression that includes a penalty term to prevent overfitting and stabilize the model.
+ie, Ridge regression is used to reduce the overfitting.
+
+**MAE = <span>∑<sup>n</sup><sub>i=1</sub></span> (&#40;h&#952;(x<sub>i</sub>) - y<sub>i</sub>)<sup>2</sup> / n**
+- it is cost function that we use in regression problems along with we add hyperparameter **λ** (slope)<sup>2</sup>
+ 
+
+it can expressed as :
+**<span>∑<sup>n</sup><sub>i=1</sub></span> (&#40;h&#952;(x<sub>i</sub>) - y<sub>i</sub>)<sup>2</sup> / n + λ <span>∑<sup>n</sup><sub>i=1</sub></span>(slope)<sup>2</sup>**
+ 
+   where :
+ - (λ) is Hyperparameter
+ - slope is (θ<sub>i</sub>)
+
+## Hyperparameter (λ):
+
+λ controls the strength of the penalty term.
+
+Larger values of λ lead to more coefficients being shrunk towards zero.
+
+![lambda shift](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/66756aed-9359-4a41-8a86-2e60ff809fbe)
 
 
+
+- The Global minima shifts up and the slope decreases.
+- λ will never become zero 
+- what is shown in plot λ = 0 is the cost function (mean square error)
+- (λ) and (θ) are inversely proportion
+
+which we can conclude as the hyperparameter (λ) increases the slope (θ) decreases and vice versa
+**Shifting of Hyperparameter to reduce the overfitting **
+![download (3)](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/3a035f56-e459-45c4-81d1-1998b12716c5)
+
+---
+---
