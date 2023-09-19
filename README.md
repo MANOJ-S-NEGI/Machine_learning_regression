@@ -262,7 +262,10 @@ Hyperparameter (λ):
 
 - Choosing an appropriate Hyperparameter (λ) is crucial. Cross-validation techniques are often used to find the best value.
 
-![download (3)](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/7bf63f37-5342-4d4b-8ef1-8a5e56022603)
+
+
+![download](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/832d48e7-4596-4add-a2dc-b10fb389ffed)
+
 
 Illustration: h<sub>&#952;</sub>(x) = &#952;<sub>0</sub> + &#952;<sub>1</sub>x<sub>1</sub> + &#952;<sub>2</sub>x<sub>2</sub> + &#952;<sub>3</sub>x<sub>3</sub><br>
  =  &#952;<sub>0</sub> + 0.54 <sub>x</sub> + 0.23 x<sub>2</sub> + 0.10 x<sub>3</sub>
