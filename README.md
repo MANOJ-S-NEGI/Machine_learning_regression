@@ -236,3 +236,46 @@ which we can conclude as the hyperparameter (λ) increases the slope (θ) decrea
 
 ---
 ---
+# Lasso Regression: [Least Absolute Shrinkage and Selection Operator]
+
+
+
+it can expressed as :
+**<span>∑<sup>n</sup><sub>i=1</sub></span> (&#40;h&#952;(x<sub>i</sub>) - y<sub>i</sub>)<sup>2</sup> / n + λ <span>∑<sup>n</sup><sub>i=1</sub></span>|(slope)|**
+
+
+![download (2)](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/45f44865-5303-430c-86e8-241f8cf74559)
+
+- It's a regularization method that helps to prevent the outliner in the dataset.
+
+- **Feature Selection**: Lasso performs both feature selection and parameter shrinkage.<br>
+It encourages the model to use fewer features by driving the coefficients of <br>less important features toward zero.
+
+- **Regularization**: Lasso adds a penalty term to the regression equation, which discourages overly complex models by shrinking the coefficients of less influential predictors.
+
+
+**Hyperparameter** 
+Hyperparameter (λ):
+
+- (λ) controls the strength of the penalty term.<br>
+ Larger values of (λ) lead to more coefficients being shrunk towards zero.
+
+- Choosing an appropriate Hyperparameter (λ) is crucial. Cross-validation techniques are often used to find the best value.
+
+![download (3)](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/7bf63f37-5342-4d4b-8ef1-8a5e56022603)
+
+Illustration: h<sub>&#952;</sub>(x) = &#952;<sub>0</sub> + &#952;<sub>1</sub>x<sub>1</sub> + &#952;<sub>2</sub>x<sub>2</sub> + &#952;<sub>3</sub>x<sub>3</sub><br>
+ =  &#952;<sub>0</sub> + 0.54 <sub>x</sub> + 0.23 x<sub>2</sub> + 0.10 x<sub>3</sub>
+ 
+ here, 0.10 x<sub>3</sub> keeps on reducing as the hyperparameter increases and eventually becomes zero.
+
+![download (1)](https://github.com/MANOJ-S-NEGI/Machine_learning_regression/assets/99602627/b59f005a-398f-4c96-b111-1eeccce4926f)
+
+**If the coefficients become zero it will automatically make some features near to zero or in reduced form.**
+
+|**Advantages**|**Limitations**|
+|:-|:-|
+|-**Feature Selection**: <br><br>Lasso can automatically select the most relevant features,<br><br>making it useful for datasets with a large number of potential predictors.|- **Correlated Predictors**:<br><br> When predictors are highly correlated, <br><br>Lasso tends to arbitrarily select one and ignore the others.|
+
+
+
