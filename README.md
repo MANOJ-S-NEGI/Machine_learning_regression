@@ -53,7 +53,7 @@ the graph will be like:
    |θ<sub>0</sub>θ<sub>1</sub> are the parameters (intercept and slope) of the linear regression model|
    |n is the number of data points|
    |h<sub>0</sub>(x<sub>i</sub>) is the predicted value for the i-th data point|
-    |y<sub>i</sub> is the actual target value for the i-th data point|
+   |y<sub>i</sub> is the actual target value for the i-th data point|
 
 2.  This cost function is also known as the Mean Squared Error (MSE) and is commonly used for evaluating the performance of a linear regression model.
 
