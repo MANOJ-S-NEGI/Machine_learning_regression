@@ -45,7 +45,7 @@ the graph will be like:
 ---
 ## **Cost function:**
 
-1. The expression, <h2>J(θ<sub>0</sub>θ<sub>1</sub>) = <sup>n</sup>∑<sub>i=1</sub> (h<sub>0</sub>(x<sub>i</sub>) - y<sub>i</sub>)<sup>2</sup></h2> represents the cost function for a linear regression model, 
+1. The expression, <h2>J(θ<sub>0</sub>θ<sub>1</sub>) = <sup>n</sup>∑<sub>i=1</sub> (h<sub>0</sub>(x<sub>i</sub>) - y<sub>i</sub>)<sup>2</sup></h2> / n  represents the cost function for a linear regression model, 
 
    |Where:|
    |:-|
